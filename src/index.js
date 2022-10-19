@@ -6,11 +6,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home';
 import About from './Pages/About';                
 import Contact from './Pages/Contact';
+import Logger from './Pages/Login';
 //import NavBar from './components/NavBar';
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Logger/>
+  },
+  {
+    path: "/home",
     element: <Home />
   },
   {
