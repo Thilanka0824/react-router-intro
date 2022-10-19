@@ -4,22 +4,15 @@ import Input from "../components/Input"
 
 
 const Contact = () => {
-    const navigate = useNavigate()
-
-    const redirectUserFunction = () => {
-        navigate("/")
-    }
+    
 
     return (
-        <div className="contact-inputs">
+        <div >
             <NavBar />
             <h1 className="contact h1" >Contact</h1>
             <br />
             <Input />
-            <br />
-            <button onClick={() => {
-                redirectUserFunction()
-            }}>SUBMIT</button>
+            
         </div>
     )
 }

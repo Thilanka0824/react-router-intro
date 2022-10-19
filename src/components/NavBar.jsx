@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 
-const NavBar = () => {
+
+
+const NavBar = (firstName, lastName, email) => {
+    
+
     return (
         <div>
             <h1 className="nav">
