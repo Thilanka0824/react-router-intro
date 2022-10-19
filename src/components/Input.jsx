@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Input = (props) => {
     const navigate = useNavigate();
     const redirectUserFunction = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     const [firstName, setFirstName] = useState("");
@@ -45,7 +45,7 @@ const Input = (props) => {
             ></input>
             <br />
             <input
-                placeholder="Email@gmail.com"
+                placeholder="myemail@gmail.com"
                 type="text"
                 value={email}
                 onChange={(event) => {
@@ -64,6 +64,7 @@ const Input = (props) => {
                         ? redirectUserFunction()
                         : alert("Please fill in all input fields");
                 }}
+
             >
                 SUBMIT
             </button>
