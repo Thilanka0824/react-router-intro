@@ -1,9 +1,10 @@
-import NavBar from "../components/NavBar"
-const Home = () => {
+import "../index.css"
+
+const HomePage = () => {
     return (
         <div>
-            <NavBar />
-            <h1>Home Page</h1>
+
+            <h3 className="page-text">Welcome to the Los Angeles Lakers Fan Page</h3>
             <p>It remains rather amazing how much better the Western Conference was for so long. Over the 22 seasons from 1999-00 through 2020-21, the West won 56.5% of its regular-season games against the East. Only once in that 22-season stretch (2008-09) did the East have a better record in interconference games.
 
                 That remarkable stretch came to an end last season, when the East eked out a victory, going 226-224 in interconference games. And now, the Eastern Conference looks even stronger.
@@ -17,4 +18,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomePage

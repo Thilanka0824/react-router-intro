@@ -1,75 +1,75 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import { useOutletContext } from "react-router-dom"
+// import { handleAddSignup} from "../App";
 
-const Input = (props) => {
-    const navigate = useNavigate();
-    const redirectUserFunction = () => {
-        navigate("/");
-    };
+// const Input = (props) => {
+//     const navigate = useNavigate();
+//     const redirectUserFunction = () => {
+//         navigate("/");
+//     };
 
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
+//     const [firstName, setFirstName] = useState("");
+//     const [lastName, setLastName] = useState("");
+//     const [email, setEmail] = useState("");
 
 
-    /*
-    const addContact = (firstName, lastName, email) => {
-        const newPerson = {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            createdDate: new Date().toString().substring(4, 24),
-        };
-    };
-    */
-    return (
-        <div className="contact-inputs">
-            <input
-                placeholder="First Name"
-                type="text"
-                value={firstName}
-                onChange={(event) => {
-                    setFirstName(event.target.value);
-                    console.log(firstName);
-                }}
-            ></input>
-            <br />
-            <input
-                placeholder="Last Name"
-                type="text"
-                value={lastName}
-                onChange={(event) => {
-                    setLastName(event.target.value);
-                    console.log(lastName);
-                }}
-            ></input>
-            <br />
-            <input
-                placeholder="myemail@gmail.com"
-                type="text"
-                value={email}
-                onChange={(event) => {
-                    setEmail(event.target.value);
-                    console.log(email);
-                }}
-            ></input>
-            <br />
-            <button
-                // Validation
-                onClick={() => {
-                        firstName.length > 0 &&
-                        lastName.length > 0 &&
-                        email.length > 0 &&
-                        email.includes("@")
-                        ? redirectUserFunction()
-                        : alert("Please fill in all input fields");
-                }}
+//     /*
+//     const addContact = (firstName, lastName, email) => {
+//         const newPerson = {
+//             firstName: firstName,
+//             lastName: lastName,
+//             email: email,
+//             createdDate: new Date().toString().substring(4, 24),
+//         };
+//     };
+//     */
+//     return (
+//         <div className="contact-inputs">
+//             <input
+//                 placeholder="First Name"
+//                 type="text"
+//                 value={firstName}
+//                 onChange={(event) => {
+//                     setFirstName(event.target.value);
+//                     console.log(firstName);
+//                 }}
+//             ></input>
+//             <br />
+//             <input
+//                 placeholder="Last Name"
+//                 type="text"
+//                 value={lastName}
+//                 onChange={(event) => {
+//                     setLastName(event.target.value);
+//                     console.log(lastName);
+//                 }}
+//             ></input>
+//             <br />
+//             <input
+//                 placeholder="myemail@gmail.com"
+//                 type="text"
+//                 value={email}
+//                 onChange={(event) => {
+//                     setEmail(event.target.value);
+//                     console.log(email);
+//                 }}
+//             ></input>
+//             <br />
+//             <button
+//                 // Validation
+//                 onClick={() => {
+//                         firstName.length > 0 &&
+//                         lastName.length > 0 &&
+//                         email.length > 0 &&
+//                         email.includes("@")
+//                         ? redirectUserFunction()
+//                         : alert("Please fill in all input fields");
+//                         handleAddSignup(firstName,lastName, email)
+//                 }}
+//             >SUBMIT</button>
+//         </div>
+//     );
+// };
 
-            >
-                SUBMIT
-            </button>
-        </div>
-    );
-};
-
-export default Input;
+// export default Input;

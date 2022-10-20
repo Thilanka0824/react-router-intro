@@ -37,6 +37,7 @@ const Logger = (props) => {
                 redirectLoggedInUserFunction() :
                 alert("Please log in")
 
+                 // This is dumb because the result is always logging the user in 
                 setIsLoggedIn(!isLoggedIn)
 
             }}>Log In</button>

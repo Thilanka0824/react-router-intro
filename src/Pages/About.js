@@ -1,10 +1,10 @@
-import NavBar from "../components/NavBar"
+//import '../index.css';
 
-const About = () => {
+const AboutPage = () => {
     return(
         <div>
-            <NavBar />
-            <h1>About Page</h1>
+            
+            <h3 className='page-text'>We Celebrate the Best NBA in the League</h3>
             <p>Preseason notes: The Lakers’ preseason wasn’t as bad as last year (0-6 and outscored by almost 18 points per 100 possessions with Anthony Davis on the floor), but it wasn’t much better. Their first defensive possession of their first game had Davis losing his man and LeBron James standing still when there was a very obvious rotation to be made. They didn’t rank as low on defense (24th, counting only games involving NBA teams) as they did on offense (30th — 93.9 points scored per 100 possessions), though the Laker who took the most preseason shots was somebody named Cole Swider, who was 14-for-54 (26%). Maybe that would have been Davis, but he missed three games with back tightness.
 
                 A positive was Kendrick Nunn playing five games, registering an effective field goal percentage of 59.0%, and looking both shifty and smooth off the dribble. Plus, the Lakers were outscored by only two points in James’ 76 minutes, with most of the plus-minus damage coming against guys who shouldn’t be in the rotation.
@@ -18,4 +18,4 @@ const About = () => {
     )
 }
 
-export default About
+export default AboutPage

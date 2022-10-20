@@ -11,8 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.page-text {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +26,7 @@ code {
 }
 
 .contact-inputs {
+  
   text-align: center;
   
 }
@@ -32,20 +39,28 @@ code {
 
 
 .nav {
-  background-color: rgb(231, 224, 21);
-    color: white;
+  background-color: #f2ef37;
+    color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
-    margin-bottom: 3rem;
+    padding: .25rem 1rem;
+    margin-bottom: 1rem;
     margin-top: 0;
   
 }
 
+
+.nav:link {
+  
+  text-decoration: none;
+  
+}
+
+
 button {
-  background: transparent;
+  background:#d28df9;
   box-sizing: border-box;
   border-radius: 0.6rem;
   align-self: center;
