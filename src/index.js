@@ -7,6 +7,7 @@ import App from './App';
 import HomePage from './Pages/Home';
 import AboutPage from './Pages/About';
 import ContactPage from './Pages/Contact';
+import SignupCard from './components/SignupCard';
 import Logger  from './Pages/Login';
 //import NavBar from './components/NavBar';
 
@@ -26,6 +27,16 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />
+      },
+      {
+        path: "/signups",
+        element: <SignupCard />,
+        children: [
+          {
+            path: "/signups:email"
+          }
+        ]
+
       },
       {
         path: "/login",

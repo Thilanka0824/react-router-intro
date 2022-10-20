@@ -56,13 +56,14 @@ const ContactPage = (props) => {
             <button
                 // Validation
                 onClick={() => {
-                    firstName.length > 0 &&
+                        firstName.length > 0 &&
                         lastName.length > 0 &&
                         email.length > 0 &&
                         email.includes("@")
                         ? redirectUserFunction()
                         : alert("Please fill in all input fields");
-                    handleAddSignup(firstName, lastName, email)
+                        
+                        handleAddSignup(firstName, lastName, email)
                 }}
             >SUBMIT</button>
         </div>
